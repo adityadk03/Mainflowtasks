@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://i0.wp.com/www.manvmiles.co.uk/wp-content/uploads/2018/06/BlackOut3_1248.jpg?w=1248&ssl=1') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: fadeIn 1s;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.catchy-line {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: fadeIn 1.5s;
+}
+
+.join-button {
+    padding: 15px 30px;
+    background: #fff;
+    color: #2575fc;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    animation: fadeIn 2s;
+}
+
+.join-button:hover {
+    background: #2575fc;
+    color: white;
+    transform: scale(1.05);
+}
+
+.about, .features {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.features {
+    animation-delay: 0.5s;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.2s;
+}
+
+.feature-item:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
